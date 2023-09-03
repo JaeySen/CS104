@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ITEC To-Do App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="v2.css">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <!-- fixed-top | sticky-top | fixed-bottom -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="far fa-check-circle"></i> ITEC To-Do App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Version 1</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Version 2 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Version 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-8 offset-md-2 alert-area mt-3">
+          <div class="alert alert-success" role="alert">
+          </div>
+        </div>
+
+    </div>
+  </div> <!--- alert section -->
+  <!-- three colomn layout with 1) Form 2) Active to do (Table) 3) Completed (Table) -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h2>Add a new task</h2>
+        <form action="v2.html" method="GET" id="task-form">
+          <fieldset class="form-group">
+          <label for="task"><i class="far fa-check-circle mr-1"></i> Task</label>
+          <input type="text" class="form-control" id="task" placeholder="Input your task...">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="type"><i class="fas fa-cogs"></i> Type of Task</label>
+            <select class="custom-select" id="type">
+              <option selected value="0">General</option>
+              <option value="1">Do Homework</option>
+              <option value="2">Take Exam</option>
+              <option value="3">Study at Library</option>
+            </select>
+          </fieldset>
+          <button type="submit" class="btn btn-outline-primary mt-3 btn-block new-task-btn"><i class="fas fa-plus-circle mr-1"></i> New Task</button>
+        </form>
+
+
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h2 class="font-weight-light">Active Tasks</h2>
+        <table class="table table-striped new-tasks">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Task</th>
+              <th scope="col"><i class="far fa-check-square"></i></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row"><i class="fas fa-cogs"></i></td>
+              <td class="task-text">Take CS201 Final exam.... someday</td>
+              <td><input type="checkbox" class="check-completed"></td>
+            </tr>
+            <tr>
+              <td scope="row"><i class="fas fa-book"></i></td>
+              <td class="task-text">Read Machine Learning 101</td>
+              <td><input type="checkbox" class="check-completed"></td>
+            </tr>
+            <tr>
+              <td scope="row"><i class="fas fa-atlas"></i></td>
+              <td class="task-text">Enroll in Statistics using R on Coursera</td>
+              <td><input type="checkbox" class="check-completed"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h2 class="font-weight-light">Completed Tasks</h2>
+        <table class="table table-striped completed-tasks">
+          <thead>
+            <tr>
+              <th scope="col"><i class="far fa-calendar-alt"></i></th>
+              <th scope="col">Task</th>
+              <th scope="col"><i class="far fa-check-square"></i></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">2021-03-05</td>
+              <td>Study for final exam. </td>
+              <td><button type="button" class="btn btn-outline-danger btn-small delete-task">X</button></td>
+            </tr>
+            <tr>
+              <td scope="row">2021-04-06</td>
+              <td>Meet friends for study session</td>
+              <td><button type="button" class="btn btn-outline-danger btn-small delete-task">X</button></td>
+            </tr>
+            <tr>
+              <td scope="row">2021-06-06</td>
+              <td>Watch Youtube tutorial on Laravel Intro</td>
+              <td><button type="button" class="btn btn-outline-danger btn-small delete-task">X</button></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+          <button type="button" class="mt-2 mb-5 btn btn-danger btn-block delete-all">Remove All</button>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="v2.js">
+
+  </script>
+
+</body>
+</html>

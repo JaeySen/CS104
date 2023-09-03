@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ITEC To-Do App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="common.css">
+
+</head>
+<body>
+  <!-- fixed-top | sticky-top | fixed-bottom -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="far fa-check-circle"></i> ITEC To-Do App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Version 1 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="v2.html">Version 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Version 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 text-center alert-area mt-2 mb-2">
+      <div class="alert alert-success" style="display: none">Success</div>
+    </div>
+  </div>
+</div>
+  <div class="container d-flex">
+    <div class="col-md-3 py-3">
+      <h2 class="font-weight-light">Add task</h2>
+
+      <form method="get" action="index.html">
+        <div class="form-group">
+          <input type="text" class="form-control" id="task" placeholder="Task">
+        </div>
+
+        <div class="dropdown form-group">
+          <label for="activity">Type</label>
+          <select class="activity" name="activity" id="activity" style="width: 100%">
+            <option selected value="general">General</option>
+            <option value="homework">Homework</option>
+            <option value="side-quest">Side-quest</option>
+          </select>
+        </div>
+
+
+        <div class="dropdown form-group">
+          <label for="assignee">Assignee</label>
+          <select name="assignee" id="assignee" style="width: 100%">
+            <option selected value="general">General</option>
+            <option value="homework">Homework</option>
+            <option value="side-quest">Side-quest</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-success btn-block" id="submit">Add task</button>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <h2 class="font-weight-light">Active tasks</h2>
+      <table class="table table-striped active">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Task</th>
+            <th scope="col">Complete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fas fa-book-open"></i></td>
+            <td>Take final</td>
+            <td><input type="checkbox" class="completed-task"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="col-md-3">
+      <h2 class="font-weight-light"><em>Completed tasks</em></h2>
+
+      <table class="table table-striped completed">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Task</th>
+            <th scope="col">Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th><i class="fas fa-book-open"></i></th>
+            <td>Take final</td>
+            <td><input type="checkbox" class="delete"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <template id="taskTemplate">
+    <th><i class="fas fa-book-open"></i></th>
+    <td>Take final</td>
+    <td><input type="checkbox" class="completed-task"></td>
+  </template>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js">
+
+  </script>
+</body>

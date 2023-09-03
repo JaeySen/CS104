@@ -1,0 +1,7 @@
+.alert-area{
+    min-height: 80px;
+}
+*{
+    opacity:1;
+    transition: opacity 300ms;
+}

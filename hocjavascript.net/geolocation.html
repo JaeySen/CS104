@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+</head>
+<body>
+    <p>Geolocation API cho phép chia sẻ vị trí hiện tại với các website ưa thích</p>
+    <p>Khi cho phép Chrome/Edge chia sẻ vị trí thông tin, <strong>Chrome/Edge sẽ lấy về mạng như địa chỉ IP, router, wifi access point,.. gửi về trung tâm dữ liệu định vị Google Location Service</strong></p>
+    <p>Phải đưa lên 1 web server mới hoạt động đc</p>
+    <br>
+    <div id="demo">
+    </div> 
+    <button onclick="getLocation()">Get Location</button>
+</body>
+    <script>
+        //Lấy đối tượng thẻ div.demo
+        var x = document.getElementById("demo");
+
+        //Lấy tọa độ hiện tại
+        function getLocation(){ 
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+        //Hiển thị vào thẻ div.demo
+        function showPosition(){
+            x.innerHTML = "Latitude: "+position.coords.latitude + "<br>Longtitude: " + position.coords.longtitude;
+        }
+    </script>
+</html>

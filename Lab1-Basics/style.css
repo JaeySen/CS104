@@ -1,0 +1,237 @@
+div {
+    background: #80808026;
+    border: 1px dashed #68b3ff;
+    padding: 5px;
+    margin: 5px;
+}
+
+* {font-family: 'archivo narrow', sans-serif;}
+
+.nav {
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    padding: 0;
+    border: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background 300ms, color 300ms;
+}
+
+nav ul li a:hover {
+	background: #5fa6ff;
+	color: white;
+}
+
+
+/*
+.flex-container{
+    display: flex; 
+}
+
+.flex-child-logo {
+    flex: 10;
+}
+
+.flex-child-nav {
+    flex: 2;
+}
+*/
+
+.banner-back {
+    height: 300vh;
+	background: url(images/11.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* z-index: 1; */
+}
+
+.banner-front {
+    background: url(./images/21.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* z-index: -11; */
+}
+ 
+.ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.container.balls {
+	position: relative;
+}
+
+.blue {
+    background: blue;
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    transition: right 20000ms;
+}
+
+.green {
+    background: green;
+    position: absolute;
+    top: 10%;
+    right: 60%;
+}
+
+.orange {
+    background: orange;
+    position: fixed;
+	top: 1px;
+    right: 1px;
+	transition: left 2000ms;
+}
+
+.red {
+    background: red;
+    position: sticky;
+}
+
+.container.balls:hover > .orange {
+    left: 50%;
+}
+
+.green:hover + .orange {
+    background: purple;
+}
+
+.container.float { 
+	height: 100px;
+}
+
+.container.float > div {
+	height: 50px;
+	width: 29%;
+	float: left;
+	margin: 1%;
+	padding: 1%;
+}
+
+.container.flex {
+	display: flex;
+}
+
+.container.flex > div {
+	width: 50%;
+	height: 100px;
+	background: #ec6f6f;
+}
+
+.container.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container.grid-4 > div {
+    height: 150px;
+    background: #97df97;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-container > div {
+	width: 20%;
+	height: 300px;
+}
+
+.box img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.container.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+img {
+    max-width: 100%; /*constraint responsive*/
+}
+
+.item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /*responsive element*/
+}
+
+/* laptop breakpoint 800px */
+@media screen and (max-width: 800px) {
+  .container.gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .col-3 {
+    width: auto;
+    float: none;
+  }
+  .banner-front {
+	height: 100%;
+	background-position: 1% 1%;
+  }
+}
+
+/* tablet layout */
+@media screen and (max-width: 650px) {
+  .container.gallery {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .container.grid-4 {
+      grid-template-columns: 1fr 1fr ;
+  }
+
+  .container.flex > div {
+    width: auto; /*responsive element": one is set to auto, other is set to percentage or specific value*/
+    height: 200px;
+    background: #ec6f6f;
+  }
+  .container.flex {
+    display: block !important;
+  }
+	.banner-front {
+	height: 100%;
+	background-position: 5% 5%;
+  }
+  .banner-back {
+	height: 110vh;
+  }
+}
+
+/* mobile layout */
+@media screen and (max-width: 450px) {
+  .container.gallery {
+      display: block;
+  }
+
+  .container.grid-4 {
+    display: block;
+  }
+  	.banner-front {
+	background-position: 1% 2%;
+  }
+  .banner-back {
+	height: 70vh;
+  }
+}

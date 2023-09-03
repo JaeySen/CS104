@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="common.css">
+      <title>Form & Table - Version 2</title>
+  </head>
+  <body>
+      <!-- fixed-top | sticky-top | fixed-bottom -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Form & Table Demo </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="v1.html">Version 1</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Version 2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Version 3</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6">
+            <!-- <h1 class="display-4">Classmates Table</h1> -->
+            <table class="table table-striped table-dark wrapper mt-4">
+              <thead class="thead-dark">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Sam</td>
+                  <td>24</td>
+                  <td><a href="#" class="edit">Edit</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Tony</td>
+                  <td>22</td>
+                  <td><a href="#" class="edit">Edit</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Lan</td>
+                  <td>34</td>
+                  <td><a href="#" class="edit">Edit</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Gintoki</td>
+                  <td>25</td>
+                  <td><a href="#" class="edit">Edit</a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Shinosuke</td>
+                  <td>6</td>
+                  <td><a href="#" class="edit">Edit</a></td>
+                </tr>
+                <tr id="form">
+                  <form method="post" action="index.html" class="" id="form">
+                    <td>+</td>
+                    <td>
+                      <fieldset class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+                      </fieldset>
+                    </td>
+                    <td>
+                      <fieldset class="form-group">
+                        <input type="number" class="form-control" id="age" placeholder="Age" name="age">
+                        <!-- <p class="error error-age">Age out of range!</p> -->
+                      </fieldset>
+                    </td>
+                    <td>
+                      <!-- <div class="col-6">
+                        <button type="submit" class="btn btn-outline-dark align-self-center">Submit</button>
+                      </div> -->
+                      <a href="#" id="submit">Submit</a>
+                    </td>
+                  </form>
+                </tr>
+              </tbody>
+              
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <template id="classmateTemplate">
+      <tr>
+        <td>5</td>
+        <td>Shinosuke</td>
+        <td>6</td>
+        <td><a href="#" class="edit">Edit</a></td>
+      </tr>
+    </template>
+
+    <template id="editTemplate">
+      <button class='btn btn-outline-success btn-sm mx-1 update'>Update</button>
+      <button class='btn btn-outline-danger btn-sm mx-1 delete'>Delete</button>
+      <button class='btn btn-outline-warning btn-sm mx-1 cancel'>Cancel</button>
+    </template>
+    
+    <footer><h3>Copyright: ITEC jQuery 2020</h3></footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    
+  </body>
+</html>

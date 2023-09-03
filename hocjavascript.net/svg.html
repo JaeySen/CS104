@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>svg tag</title>
+</head>
+<body>
+  <h1>Hello, world</h1>
+
+  <xml version="1.0" standalone="no">
+  <svg width="1000" height="1000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+    <rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+    <rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+
+    <circle cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>
+    <ellipse cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
+
+    <line x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5"/>
+    <polyline points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+        stroke="orange" fill="transparent" stroke-width="5"/>
+
+    <polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+        stroke="green" fill="transparent" stroke-width="5"/>
+
+    <path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
+
+    <circle cx="200" cy="70" r="50" fill="green" stroke="yellow"/>
+    <ellipse cx="350" cy="70" rx="100" ry="50" style="fill:green" />
+    <rect width="300" height="100"  x="450" y="70" fill="green" />
+    <line x1="200" y1="200" x2="500" y2="500" style="stroke: green; stroke-linecap:round; stroke-width:20;"/>
+    <polyline
+            points="250,250 300,250 300,300 350,300 350,350 "
+            fill="#F9F38C" stroke="green" stroke-width="6" />
+    <polygon points="500 500, 600 600, 700 100"
+             style="fill: green; stroke:#F9F38C;" stroke-width="5" />
+     <rect width="50" height="50" fill="orange">
+        <animate attributeName="x" from="0" to="300"
+                 dur="1s" fill="freeze" repeatCount="indefinite"/>
+     <path d="M 0 0 C 100 0, 0 100, 100 100"
+           style="stroke:black; fill:green" />
+
+      <path id="lineAB" d="M 100 350 l 150 -300" stroke="red"
+      stroke-width="3" fill="none" />
+      <path id="lineBC" d="M 250 50 l 150 300" stroke="red"
+      stroke-width="3" fill="none" />
+      <path d="M 175 200 l 150 0" stroke="green" stroke-width="3"
+      fill="none" />
+      <path d="M 100 350 q 150 -300 300 0" stroke="blue"
+      stroke-width="5" fill="none" />
+      <!-- Mark relevant points -->
+      <g stroke="black" stroke-width="3" fill="black">
+        <circle id="pointA" cx="100" cy="350" r="3" />
+        <circle id="pointB" cx="250" cy="50" r="3" />
+        <circle id="pointC" cx="400" cy="350" r="3" />
+      </g>
+      <!-- Label the points -->
+      <g font-size="30" font-family="sans-serif" fill="black" stroke="none"
+      text-anchor="middle">
+        <text x="100" y="350" dx="-30">A</text>
+        <text x="250" y="50" dy="-10">B</text>
+        <text x="400" y="350" dx="30">C</text>
+      </g>
+    </rect>
+  </svg>
+</body>
+</html>

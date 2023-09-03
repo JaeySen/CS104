@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 2 - BTC.com</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans JP', sans-serif;
+			font-family: 'Roboto Slab', serif; -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header>
+        <div class="logo">
+          <img src="images/btclogo.png" width="150px" alt="">
+        </div>
+		
+        <label for="hamburger" class="hamburger">☰</label>
+        <input type="checkbox" name="hamburger" class="hamburger">
+        <div class="main-nav">
+          <nav>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Trade</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="wrap-fluid">
+        <div class="banner">
+          <div class="quote">
+            <h2>Satoshi Nakamoto Once Said...</h2>
+            <h4>Actually no one knows who he is~</h4>
+          </div>
+        </div> <!-- end of banner -->
+      </div>
+      <div class="wrap-container">
+        <div class="front-three">
+          <div class="col-3">
+            <div class="col-img">
+              <img src="images/btcbanner.jpg" alt="">
+            </div>
+            <h2>About BTC</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button type="button" name="button">Read More</button>
+          </div> <!-- end of .col-3 -->
+          <div class="col-3">
+            <div class="col-img">
+              <img src="images/trade.jpg" alt="">
+            </div>
+            <h2>Trade</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button type="button" name="button">Read More</button>
+          </div> <!-- end of .col-3 -->
+          <div class="col-3">
+            <div class="col-img">
+              <img src="images/bg1.jpg" alt="">
+            </div>
+            <h2>Create Account</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button type="button" name="button">Read More</button>
+          </div> <!-- end of .col-3 -->
+        </div> <!-- end of front-three -->
+        <div class="front-two">
+          <div class="form">
+            <h2>Create Account</h2>
+            <form action="index.html" method="post">
+              <label for="username">User Name</label> <br>
+              <input type="text" name="username"> <br>
+              <label for="email">Email</label> <br>
+              <input type="email" name="email"> <br>
+              <label for="password">Password</label> <br>
+              <input type="password" name="password"> <br>
+              <input type="checkbox" name="subscribe" value="true"> Sign up to our newsletter. <br>
+              <button type="submit">Sign up</button>
+            </form>
+          </div>
+          <div class="side-img">
+            <img src="images/btccircle.png" alt="">
+          </div>
+        </div>
+      </div> <!--end of wrap-container-->
+      <div class="wrap-fluid">
+        <div class="banner2">
+          <h1>Some inspiring quote here</h1>
+        </div>
+      </div>
+      <div class="wrap-container">
+        <h2>Cryto Gallery</h2>
+        <div class="gallery">
+          <div class="item">
+            <img src="images/bg1.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="images/bg2.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="images/eth.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="images/xrp.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="images/trade.jpg" alt="">
+          </div>
+		  <div class="item">
+            <img src="images/btcbanner.jpg" alt="">
+          </div>
+        </div>
+
+      <div class="theater">
+        <div class="screen">
+          <img src="images/bg1.jpg" alt="">
+        </div>
+        <ul>
+          <li class="prev"><</li>
+          <li class="next">></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer">
+      <h2>Copyright: Trader 2021</h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+h1, h2, h3, h4, nav li ul, button{
+  font-family: 'Roboto Slab', serif;
+}
+
+p, li, ul, *{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+img{
+  max-width: 100%;
+}
+
+header {
+    background: black;
+    position: fixed;
+    width: 100%;
+    display: flex;
+	padding: 5px 0;
+    border-bottom: 2px solid #4a4a4a;
+    /* z-index: 1; */
+}
+
+header > * {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.main-nav {
+	padding: 0;
+}
+
+nav ul {
+    display: inline-flex;
+    float: right;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    transition: background 300ms;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: orange;
+    color: beige;
+}
+
+.hamburger {
+	display: none;
+}
+
+.banner {
+    height: 65vh;
+    background: url(images/banner1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.quote {
+	width: 100%;
+	text-align: center;
+	padding-top: 20vh;
+	color: white;
+    text-shadow: 1px 1px 2pc white;
+}
+
+
+.wrap-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.front-three {
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* .front-three col-3 {} descentdant selector */
+
+/* .col-img ~ h2 {} sibling selector */
+
+.col-img img {
+	width: 100%;
+	height: 20vh;
+    object-fit: cover;
+}
+
+.col-3 h2 {
+	text-align: center
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: orange;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px grey;
+    color: white;
+    transition: background 300ms, box-shadow 300ms;
+}
+
+button:hover {
+    background: #f58600;
+    box-shadow: 1px 1px 5px grey;
+}
+
+/* front-two */
+.front-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 35px 0px;
+    grid-gap: 5%;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 2px inset lightgray;
+}
+
+form > * {
+    margin: 5px 0px;
+}
+
+.banner2 {
+    background: url(images/bg3.jpg);
+    height: 70vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    width: 100%;
+}
+
+.banner2 > h1 {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.gallery img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.theater {
+    width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 70px;
+    left: 0;
+    background: rgb(0 0 0 / 90%);
+    z-index: 10;
+    display: none; /* can't set opacity:0 */
+    /* transition: opacity 400ms; */
+}
+
+.screen {
+    position: relative;
+    top: 40px;
+    left: 20%;
+}
+
+.theater img {
+    width: 60%;
+}
+
+.theater ul li {
+    border: 1px solid #797979;
+    color: black;
+    background-color: white;
+    list-style: none;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    box-shadow: 1px 1px 3px white;
+    /* transform: scale(1);
+    transition: transform 300ms; */
+}
+
+.theater ul li:first-child {
+    left: 70px;
+}
+
+.theater ul li:last-child {
+    right: 50px;
+}
+
+.footer {
+    background: black;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .front-three, .front-two, .gallery {
+    display: block !important;
+  } 
+  
+  .front-three .col-3{
+	width: auto;
+	height: 30vh;
+	margin: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		position: absolute;
+		top: 75px;
+		right: 0px;
+		height: 100vh;
+		transition: right 500ms;
+        background-image: url(https://cdn.wallpapersafari.com/19/19/UuaniF.png);
+		background-size: 73%;
+	}
+	
+	nav ul {
+		display: block !important;
+	}
+	
+	nav ul li {
+		margin: 20px 5px;
+	}
+	
+	.hamburger {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		height: 30px;
+		width: 20px;
+		color: white;
+		font-size: 40px;
+	}
+	
+	input.hamburger {
+		cursor: pointer;
+        opacity: 0;
+	}
+	
+	input.hamburger:checked ~ nav {
+		right: -200px;
+	}
+	
+}

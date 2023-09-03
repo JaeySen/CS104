@@ -1,0 +1,90 @@
+epiz_27501473
+MFRhs9RbNFl
+
+----------------------------
+w1&2
+overview of Web Basics
+design theory: ux/ui, responsive/mobile first
+project: Personal page w/ Resume
+html5, js5, css3
+task : exchange MS word docs -><- html, export to html
+w1_lab : position, hover, transition, @media to create responsive 
+w2_lab : header, footer, form 
+
+w3&4 Responsive Design
+Modern responsive design techniques
+design theory: //
+project: mobile friendly website
+css, jquery
+w3_lab : 
+
+w5&6 intro to jQuery and JS
+updating content dynamically with ajax
+project: dynamic news Feed site
+ajax/http request; get data from others website, upload data to our website w/o refresh
+using jason placeholder
+
+w7&8 frontend framework
+*make own website using owned html and css
+
+rapid prototyping
+project: modern business site landing page
+using bootstrap 4
+
+w9&10 web app final proj
+create a class responsive web app with vue.js and laravel - individual or group
+fb react, angular
+-------------------------------------
+lec5 card bootstrap html
+lab4 lightbox js
+
+lec6 vanilla js intro 
+lab5 midterm
+
+lec7 form check & warning; add via innerHTML; input username, pw, confirm pw, age
+lab6 pw progressbar html+js; form completion 
+
+lec8 pagination html intro; loadbox gif js; XMLHttpRequest() js; Math.ceil() js
+lab7 ITEC Todo app
+
+lec9 ajax request intro + random user generate; XMLHttpRequest() js
+lab8 //
+
+lec10 BTC converter
+lab9 // complete : auto-refresh
+
+lab10
+-------------------
+revision
+
+background, color 
+border, padding, margin
+width, height
+border-radius*
+position, top, right
+float
+display
+list-style (nav ul)
+transition 
+
+
+----understand common element---
+- position : 
+	+ static : default css edit for new html 
+	+ relative : same as static but can include left/top/right/bottom (px) editing 
+	+ absolute : remove element completely -> useful for demandinig an element to stick in a place without having anything else move around it
+	+ fixed : stay to most parent element that's relative (defaultly the <html>)
+	+ sticky : relative & fixed 
+	
+--------------------------------------------
+tutorials
+CSS Intro (https://www.youtube.com/playlist?list=PLZlA0Gpn_vH9D0J0Mtp6lIiD_8046k3si
+	https://www.youtube.com/playlist?list=PLZlA0Gpn_vH8mpXIUHjWoMAAgoCEinL0R
+
+------------------------------------------------
+textbooks
+1 John Duckett(2014) Javascript and jQuery: Interactive Front-end Web development
+2 John Duckett(2014) HTML and CSS: Design and Build Websites
+3 HTML5 for Web Designers, Jemery Kieth, A Book Apart. 2010
+4 CSS3 for Web Designers, Dan Cederholm, A Book Apart. 2010
+5 Javascript Creativity, Shane Hudson, Apress, 2014

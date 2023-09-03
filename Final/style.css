@@ -1,0 +1,177 @@
+h1, h2, h3, h4, h5, nav li {
+  font-family: 'Verdana', sans-serif;
+  color: #01bbd4;
+}
+
+body {
+  height: 100vh;
+}
+
+.navbar-toggler {
+  float: right;
+}
+
+button.btn-light {
+  padding: 0 10px;
+}
+
+.navbar.bg-light {
+  padding: 0 16px;
+}
+
+.navbar-nav li{
+  position: initial !important;
+}
+
+.show-lg {
+  display: none;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+ul li a{
+  padding-left: 20px;
+
+}
+span {
+  color:#01bbd4;
+}
+a {
+  color: grey;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #01bbd4;
+}
+
+.dropdown-item.active {
+  background-color: #01bbd4;
+}
+
+.nav-item{
+  margin-left: 20px;
+}
+
+.col > img{
+  width: 100%;
+}
+
+#fluid > .col {
+  text-align: center;
+  margin: 5px 5px;
+  padding: 10px;
+  background-color: #01bbd4;
+}
+
+html{
+  background-color: #f6f6f6;
+}
+
+.col .row > a{
+  text-decoration: none;
+}
+
+
+img.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.top-rating {
+  position: relative;
+}
+
+.slider-arrow {
+  background: none;
+  opacity: 0.5;
+  position: absolute;
+  overflow: visible;
+  color:#01bbd4;
+}
+
+.col > img.img-fluid {
+  /* width: 100%; */
+  height: 250px;
+  object-fit: cover;
+}
+
+.leftcenter {
+  left: 0rem;
+  top: 50%;
+  bottom: auto;
+}
+
+.rightcenter {
+  right: 0rem;
+  top: 50%;
+  bottom: auto;
+}
+
+.brand > .card-img-top {
+  height: 100px;
+  width: 100%;
+  object-fit: scale-down; 
+}
+
+.price{
+  color: #ed0000;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+hr {
+  display: block;
+  color: black !important;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  height: 1px;
+  clear: both;
+}
+
+@media only screen and (max-width: 992px){
+
+  .main-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: auto
+  }
+
+  .main-nav > li {
+    margin-left: 60px;
+  }
+
+  .sub-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    text-align: center;
+  }
+
+  .show-lg {
+    display: initial;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 640px){
+
+}
+
+@media only screen and (max-width: 480px){
+
+}

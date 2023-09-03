@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign In</title>
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+  <!-- Main css -->
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="container" style="margin-top: 120px; max-width: 900px;">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <div class="row">
+          <img style="margin: auto;" src="images/signin-image.jpg" alt="">
+        </div>
+      </div> <!-- end of col-md-6 -->
+      <div class="col-md-6 margin-col">
+        <h1 class="mb-5"><b>Sign In</b></h1>
+        <form action="index.html" method="POST" id="form-signup">
+          <div class="form-group">
+              <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+              <input class="custom-input" type="text" name="name" id="name" placeholder="Your Name"/>
+              <p class="error error-pass1">Plese enter your name account !!!</p>
+          </div>
+          <div class="form-group">
+              <label for="password"><i class="zmdi zmdi-lock"></i></label>
+              <input class="custom-input" type="password" name="name" id="password" placeholder="Password"/>
+              <i style="position: absolute; top: 32%; right: 2px;" class="fa fa-eye-slash showpwd" onClick="showPwd('password', this)"></i>
+              <p class="error error-pass1">Plese enter your password account !!!</p>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+            <label for="agree-term" class="label-agree-term ml-2" style="top: -5%;"><span><span></span></span> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary mt-2">Login</button>
+          <a href="signup.html" class="signup-image-link ml-5">Create an account</a>
+        </form>
+        <div class="social-login mt-5">
+          <div class="row">
+            <span class="ml-3">Or login with</span>
+            <ul>
+              <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+              <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+              <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- end of col-md-6 -->
+    </div> <!-- end of row -->
+  </div> <!-- end of container -->
+  <!-- Optional JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="auth.js">
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+h1, h2, h3, nav ul li {
+    font-family: 'Oswald', sans-serif;
+    /* font-family: "Verdana","sans-serif"; */
+}
+
+p, ul li, a{ 
+    font-family: 'arial', sans-serif;
+    font-weight: lighter;
+}
+
+body{
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(0 0 0 / 17%);
+    background: #ececec;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #36658a;
+    border-radius: 7px;
+}
+
+.logo {
+   display: inline-block;
+}
+
+.logo img{
+    width: 50%;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    display: inline-flex;
+    list-style: none;
+    padding: 5px 10px;
+    margin: 0px 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    color: #9cdcfe;
+}
+
+.banner{
+    background-image: url(images/bg1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+}
+
+.banner > * {
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 40px;
+    border-radius: 15px;
+    color: white;
+    font: bold;
+}
+
+.title-box{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-col {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+
+.resources{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.row-1 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.col-1 {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+.col-1 img{
+    width: 50px;
+    height: 60%;
+    padding: 20px;
+}
+
+.col-1 > div > p {
+    margin-top: 0;
+}
+
+.row { 
+    margin: 20px 25px;
+}
+
+.row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.col {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.row p {
+    text-align: left !important;
+}
+
+img {
+    width: 15%;
+    height: auto;
+    padding: 20px;  
+}
+
+.blend-bg{
+    background: url(images/bg2.jpg);
+    background-size: cover;
+}
+
+#blend-content {
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+.float-container {
+    background: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px grey;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.features{
+    padding: 75px 100px;
+}
+
+.title {
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+.white {
+    color: white
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid > .block{
+    display: flex;
+}
+
+.grid > .block:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.row-3 > .block{
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.proof {
+    margin-top: 200px;
+}
+
+.block {
+    position: relative;
+}
+
+.proof-pic{
+    text-align: center;
+}
+
+.proof-pic img{
+    width: 60%;
+}
+
+.proof .row.row-3 {
+    margin-top: 100px;
+}
+
+.img-wrap {
+    position: absolute;
+    width: 90%;
+    top: -65px;
+}
+
+.img-wrap img {
+    width: 85px;
+    border-radius: 100%;
+}
+
+.govern, .model {
+    padding: 40px 60px;
+    display: flex;
+    margin-top: 100px !important;
+}
+
+.illustration img {
+    width: 70%;
+}
+
+.illustration {
+    text-align: center;
+}
+
+.model .illustration img {
+    width: 100%;
+    height: 100%;
+    padding: 0
+}
+
+.model, .govern{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    object-fit: cover;
+}
+
+.govern > .title {
+    text-align: left;
+}
+
+.model > .title {
+    text-align: left;
+}
+
+
+footer{
+    background: #071c37;
+    color: white;
+    padding: 20px 60px;
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Exchange Currency</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- fixed-top | sticky-top | fixed-bottom -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+          <a class="navbar-brand" href="#"><i class="fab fa-bitcoin"> </i> ITEC BTC Exchange</a>
+
+          <div class="timer">
+            <h4 class="text-light font-weight-light">Refreshing in: <span class="time">--</span></h4>
+          </div>
+      </div>
+  </nav>
+  <div class="jumbotron-fluid jumbotron text-center">
+    <h3 class="display-4 mb-3">BTC Exchange Rate:</h3>
+    <div class="container">
+      <div class="row displace">
+        <div class="col-md">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-coins"> </i> USD</h5>
+              <p class="card-text currency usd"></p>
+            </div>
+          </div>
+        </div> <!-- end of colmd4 -->
+        <div class="col-md">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-coins"> </i> JPY</h5>
+              <p class="card-text currency jpy"></p>
+            </div>
+          </div>
+        </div> <!-- end of colmd4 -->
+        <div class="col-md">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-coins"> </i> VND</h5>
+              <p class="card-text currency vnd"></p>
+            </div>
+          </div>
+        </div> <!-- end of colmd4 -->
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 mt-3">
+          <div class="alert alert-info checking" role="alert">
+              Getting updated price information....
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- end of jumbotron -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="form-add mb-3">
+         <h4>Add currency:</h4>
+         <input type="text" class="form-control mb-2 mt-2" id="add-currency-input" placeholder="Search" data-toggle="dropdown" name="add-currency" aria-expanded="false" aria-describedby="dropdown-menu">
+         <!-- <button type="button" class="btn btn-primary btn-block" name="button">Get Exchange Rate</button> -->
+        <div class="dropdown-menu" aria-labelledby="add-currency">
+          <!-- <a class="dropdown-item" href="#!">Action</a>
+          <a class="dropdown-item" href="#!">Another action</a> -->
+        </div>
+
+        <!-- <h3 class="text-weight-light text-center mt-2"><span class="custom-request"> </span></h3> -->
+       </div>
+      </div>
+    </div>
+
+    <div>
+      <button class="question">What is Dynamic Height Transition?</button> 
+
+      <div class="content-wrapper">
+          <div class="expandable-content">Content Here</div>
+      </div>
+    </div>
+
+    <div>
+      <ul class="custom-carousel">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+      </ul>
+    </div>
+
+    <!-- <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th class="col-1">#</th>
+          <th class="col-3">Currency Name</th>
+          <th class="col-2">Currency Code</th>
+          <th class="col-3">Exchange Rates</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>   -->
+  </div>
+
+  
+  <!-- <template id="template-actions">
+    <button class='btn btn-outline-success btn-sm mx-1 update'>Update</button>
+    <button class='btn btn-outline-danger btn-sm mx-1 delete'>Delete</button>
+    <button class='btn btn-outline-warning btn-sm mx-1 cancel'>Cancel</button>
+  </template>
+
+  <template id="template-actions-sm">
+    <button class='btn btn-outline-success btn-sm update'><i class="far fa-save"></i></button>
+    <button class='btn btn-outline-danger btn-sm delete m-1'><i class="fas fa-trash"></i></button>
+    <button class='btn btn-outline-warning btn-sm cancel'><i class="fas fa-undo"></i></button>
+  </template> -->
+
+  <template id="template-card">
+    <div class="col-md">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-coins"></i> </h5>
+          <p class="card-text currency"></p>
+        </div>
+      </div>
+    </div> 
+  </template>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+input[type="text"], input[type="number"]{
+  background: transparent;
+  border: none;
+}
+
+td:last-child, th:last-child {
+  text-align: center;
+}
+
+td {
+  max-width: 120px;
+}
+
+.wrapper {
+  box-shadow: 1px 1px 10px grey;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  color: white
+}

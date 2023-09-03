@@ -1,0 +1,35 @@
+.jumbotron {
+    background: black;
+    background-image: url(images/polybg.jpg);
+    background-blend-mode: hard-light;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+form {
+    width: 100%;
+}
+
+table input {
+    border: none;
+    border-bottom: 1px solid grey;
+    background: none;
+}
+
+table input:focus {
+    outline: none;
+}
+
+footer {
+    background: black;
+    color:white;
+    padding: 10%;
+    text-align: center;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 768px){
+    .form-group{
+        width: 100%;
+    }
+} 

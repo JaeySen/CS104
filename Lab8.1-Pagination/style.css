@@ -1,0 +1,119 @@
+.jumbotron-fluid.jumbotron {
+    background: url(images/tet.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 800;
+    text-align: center;
+    background-position: center;
+}
+
+* {
+  opacity: 1;
+  transition: opacity 1100ms;
+}
+
+.loadbox {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 0;
+    opacity: 1;
+}
+
+.navbar {
+  z-index: 10;
+}
+
+.loadbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.card {
+  /* max-height: 90%; */
+  max-height: 25vh;
+}
+
+.card-body {
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, rgba(29, 33, 47, 0), #1d212f);
+}
+
+img.rounded-circle {
+  box-shadow: 1px 1px 7px grey;
+  border: 4px solid grey;
+  width: 70px;
+  height: 70px;
+}
+
+.male {
+border-color: #8ad9f3 !important;
+}
+
+.female {
+border-color: pink !important;
+}
+/* theatre */
+.wrapper {
+  width: 50%;
+  height: 50%;
+  margin: auto;  
+  position: relative;
+}
+
+.wrapper img {
+    position: absolute;
+    top: 0;
+}
+
+.wrapper img {
+  width: 80%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transition: left 300ms;
+}
+
+.left100 {
+  left: 110% !important;
+}
+
+.leftminus100 {
+  left: -110% !important;
+}
+
+.lightbox {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgb(0 0 0 / 90%);
+	display: none;
+	opacity: 0;
+	transition: opacity 400ms;
+}
+
+.lightbox ul li {
+  position: absolute;
+  top: 50%;
+  background: white;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #797979;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #0c0c0c;
+  list-style: none;
+  transform: scale(1);
+  transition: transform 300ms;
+}

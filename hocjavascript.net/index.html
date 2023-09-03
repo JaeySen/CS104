@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- define meta tag -2/2/21-->
+    <meta name="keywords" content="summarize">
+    <meta name="description" content="hocjavascript">
+    <meta name="author" content="hocjavascript.net">
+    <meta http-equiv="refresh" content="150">
+    <base href="#" target="_blank">
+
+    <title>hocjavascript.net</title>
+</head>
+<body>
+    <!-- <h3><a href="https://hocjavascript.net/html/">this is practice source (click me)<a/></h3> -->
+
+    <h4>this is practice for form tag, fieldset tag and legend tag</h4>
+    <form action="" target="_blank" novalidate>
+      <fieldset>
+      <legend>Thông tin cá nhân</legend>
+          Họ, tên đệm: <br>
+          <input type="text" name="txtHoDem"><br>
+          Tên: <br>
+          <input type="text" name="txtTen"><br>
+
+          Lưu ý: độ dài mặc định của trường text là 20 kí tự. <br>
+          <br>
+          <input type="radio" name="gender" value="male" checked>Nam <br>
+          <input type="radio" name="gender" value="female">Nữ <br>
+          <input type="radio" name="gender" value="other">Other <br>
+
+          <input type="submit" value="submit"><br>
+      </fieldset>
+    </form>
+
+    <div class="">
+      <h4>this is practice for html ENTITIES</h4>
+      &quot; &apos;&nbsp;&lt; &gt;&amp;&cent;&pound;&yen;&sect;&copy;&reg;
+      <br>
+      <h6><a href="https://www.w3schools.com/html/html_entities.asp">W3Schools</a></h6>
+      <h6><a href="https://hocjavascript.net/html/su-dung-html-entity/">hocjavascript</a></h6>
+    </div>
+
+
+    <div class="">
+      <h4>this is practice for BLOCK-LEVEL TAGS: &lt;q&gt;, &lt;blockquote&gt;, &lt;abbr&gt;, &lt;address&gt;, &lt;cite&gt;, &lt;bdo&gt;</h4>
+      <p>this is practice for &lt;q&gt;QUOTE TAG&lt;/q&gt; =&gt; this is practice for <q>QUOTE TAG</q></p>
+      <p>this is practice for &lt;blockquote&gt;BLOCKQUOTE&lt;/blockquote&gt; =&gt; this is practice for <blockquote>BLOCKQUOTE</blockquote></p>
+      <p>this is practice for &lt;abbr title=&quot;ABBREVIATIONS&quot;&gt;abbr&lt;/abbr&gt; =&gt; this is practice for <abbr title="ABBREVIATIONS">abbr</abbr></p>
+      <p>this is practice for &lt;address&gt;Address at ABC&lt;br&gt;email@email.com&lt;br&gt;&lt;/address&gt; =&gt; this is practice for <address>Address at ABC<br>email@email.com<br></address></p>
+      <p>this is pracetice for &lt;cite&gt;CITATION&lt;/cite&gt; =&gt; this is practice for <cite>CITATION</cite></p>
+      <p>this is practice for &lt;bdo dir=&quot;rtl&quot;&gt;BI_DIRECTIONAL OVERRIDE&lt;/bdo&gt; =&gt; this is practice for <bdo dir="rtl">BI-DIRECTIONAL OVERRIDE</bdo> (right to left)</p>
+      <p>this is practice for &lt;bdo dir=&quot;ltr&quot;&gt;BI_DIRECTIONAL OVERRIDE&lt;/bdo&gt; =&gt; this is practice for <bdo dir="ltr">BI-DIRECTIONAL OVERRIDE</bdo> (left to right)</p>
+      <h6><a href="https://hocjavascript.net/html/the-trich-dan-trong-html/">hocjavascript</a></h6>
+    </div>
+    <div class="">
+      <h4>this is practice for more block-level element VS inline element</h4>
+      <p>Block-level element have default display:block. E.g: &lt;div&gt;</p>
+      <div class="" style="background:#eee;width:250px">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <p>Inline element have default display:inline. E.g: &lt;span&gt;</p>
+      <p>Lorem ipsum dolor sit amet, <span style="background:#eee;color:blue">consectetur adipisicing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h6><a href="https://hocjavascript.net/html/html-block-va-inline-element/">hocjavascript</a></h6>
+    </div>
+
+    <div class="">
+      <h4>this is practice for printing navigation path and script</h4>
+      <blockquote>
+        <p>this is practice for &lt;kbd&gt;Files | Open..&lt;/kbd&gt; =&gt; this is practice for <kbd>Files | Open..</kbd> (printing input from keyboard)</p>
+        <p>this is practice for &lt;samp&gt;Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189&lt;/samp&gt; =&gt; this is practice for <samp>Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189</samp> (printing output path)</p>
+        <p>this is practice for &lt;pre&gt;, &lt;code&gt;</p>
+        <blockquote>
+          &lt;pre&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;code class="js"&gt;<br>
+          &nbsp;&nbsp;&nbsp;var x = 5;<br>
+          &nbsp;&nbsp;&nbsp;var y = 6;<br>
+          &nbsp;&nbsp;&nbsp;document.getElementById(“demo”).innerHTML = x + y;<br>
+          &nbsp;&nbsp;&nbsp;&lt;/code&gt;<br>
+          &lt;/pre&gt;<br>
+        </blockquote>
+        =&gt;
+        <pre>
+          <code class=”js”>
+          var x = 5;
+          var y = 6;
+          document.getElementById(“demo”).innerHTML = x + y;
+          </code>
+        </pre>
+        &lt;pre&gt; keep the formatting text in html<br>
+        &lt;code&gt; must be inside &lt;pre&gt; to be formatted as script; unless u'll see <br>
+        <code class=”js”>
+        var x = 5;
+        var y = 6;
+        document.getElementById(“demo”).innerHTML = x + y;
+        </code>
+      </blockquote>
+    </div>
+
+    <div class="">
+      <h4>this is practice for &lt;audio&gt;</h4>
+      <blockquote>
+        &lt;audio controls&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg&gt;<br>
+        &lt;/audio&gt;<br>
+      </blockquote>
+      =&gt;
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      </audio>
+      <h5>audio support: .mpeg, .ogg, .wav</h5>
+      <h6><a href="https://hocjavascript.net/html/su-dung-svg-trong-html/">hocjavascript</a></h6>
+    </div>
+
+    <div class="">
+      <h4>this is practice for &lt;iframe&gt;</h4>
+      <p>&lt;iframe src="https://youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0&showinfo=0&rel=0" allowfullscreen frameborder="0" width="100%" height=""&lt;/iframe&gt;</p>
+      <iframe src="https://youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0&showinfo=0&rel=0" allowfullscreen frameborder="0" width="100%" height=""></iframe>
+    </div>
+
+    <h4>this is practice for <a href="geolocation.html">geolocation</a></h4>
+    <h4>this is practice for <a href="semantic.html">semantic</a></h4>
+    <h4>this is practice for <a href="storage_session.html">storage_session</a></h4>
+    <h4>this is practice for <a style="text-decoration: none" href="svg.html">&lt;svg&gt;</a></h4>
+    <h4><a href="https://hocjavascript.net/tong-quan/cac-ky-thuat-can-biet-de-thiet-ke-layout-cho-mot-website/">Các kỹ thuật cần biết để thiết kế layout cho một website</a></h4>
+
+</body>
+</html>
