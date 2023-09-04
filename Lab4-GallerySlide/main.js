@@ -1,9 +1,9 @@
-
 $(document).ready(() => {
-
-  $(".gallery img").click(() => {
-    let src = $(this).attr("src");
-    $(this).addClass("active");
+  $(".gallery img").click((e) => {
+    // let src = $(this).attr("src");
+    // $(this).addClass("active");
+    let src = $(e.currentTarget).attr("src");
+    $(e.currentTarget).addClass("active");
     loadImg(src);
     showLightbox();
   });
@@ -23,21 +23,20 @@ $(document).ready(() => {
   function cycleImg(direction) {
     let currentnode = $(".gallery img.active");
     let src, nextnode, onclass, offclass;
-    if(direction == "next") {
-      console.log("next chosen");
-       nextnode = currentnode.next();
-       onclass = "left100";
-       offclass = "leftminus100";
+    if (direction == "next") {
+      nextnode = currentnode.next();
+      currentnode.removeAttr("class");
+      onclass = "left100";
+      offclass = "leftminus100";
     } else {
-      console.log("prev chosen");
       nextnode = currentnode.prev();
       onclass = "leftminus100";
       offclass = "left100";
     }
 
-    src = nextnode.attr("src");//?
+    src = nextnode.attr("src"); //?
 
-    if(src == null && direction == "next") {
+    if (src == null && direction == "next") {
       nextnode = $(".gallery img").first();
       src = nextnode.attr("src");
     } else if (src == null && direction == "prev") {
@@ -47,18 +46,22 @@ $(document).ready(() => {
     currentnode.removeClass("active");
     nextnode.addClass("active");
 
-    let newnode = "<img src='" + src + "' class='"+ onclass + "'>";
-    $(".lightbox .wrapper").append(newnode);
-    setTimeout(function() {
-      $(".lightbox .wrapper img").last().removeClass(onclass);
-      $(".lightbox .wrapper img").first().addClass(offclass);
-    }, 10)
-    setTimeout(function(){
-      $(".lightbox .wrapper img").first().remove();
-    }, 300)
+    // let newnode = "<img src='" + src + "' class='" + onclass + "'>";
+    let newnode = `
+      <img src="${src}" id="wrapper-img" class="${onclass}" >
+    `
+    $(".wrapper").append(newnode);
+    setTimeout(function () {
+      $(".wrapper img").last().removeClass(onclass);
+      $(".wrapper img").first().addClass(offclass);
+    }, 10);
+    setTimeout(function () {
+      $(".wrapper img").first().remove();
+      $(".wrapper img").last().removeAttr("class")
+    }, 300);
   }
 
-  //show the lightbox with fade in 
+  //show the lightbox with fade in
   function showLightbox() {
     $(".lightbox").css("display", "flex");
     setTimeout(() => {
@@ -68,12 +71,11 @@ $(document).ready(() => {
   //hide the lightbox with fade out
   function hideLightbox() {
     $(".lightbox").css("opacity", 0);
-    setTimeout(function(){
+    setTimeout(function () {
       $(".lightbox").css("display", "none");
     }, 300);
   }
   function loadImg(src) {
     $(".lightbox img").attr("src", src);
   }
-
-})
+});
