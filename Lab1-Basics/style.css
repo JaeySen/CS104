@@ -7,16 +7,16 @@ div {
 
 * {font-family: 'archivo narrow', sans-serif;}
 
-.nav {
-    position: absolute;
-    top: 24px;
-    right: 30px;
-    padding: 0;
-    border: 0;
+.navbar {
+    display: flex;
+}
+.logo {
+    width: 90%;
 }
 
 nav ul {
     display: flex;
+    padding: 0;
 }
 
 nav ul li {
@@ -235,3 +235,20 @@ img {
 	height: 70vh;
   }
 }
+
+/* grid-template: row / column
+
+repeat(<times>, <size>)
+	<times> auto-fit, auto-fill
+	<size> minmax(min, max)
+	
+grid-template-area, grid-area
+grid-auto-rows
+
+grid-column: 1 / span 2 
+grid-row: span 2
+grid-auto-flow: row (default), dense
+
+grid-template-columns: 1fr [content-start] 5fr [content-end]
+
+https://scrimba.com/learn/cssgrid */
